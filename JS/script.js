@@ -40,6 +40,12 @@ const teamMembers = [
 //dichiaro la variabile in cui andrò ad inserire le card
 const teamCards = document.getElementById('cardContainer');
 
+//dichiaro le variabili di input del form
+const nameMember = document.getElementById('name');
+const roleMember = document.getElementById('role');
+const emailMember = document.getElementById('email');
+const imageMember = document.getElementById('image');
+const form = document.getElementById('member-form');
 
 //andiamo a crare una varibile cards dove andranno messe poi le singole card
 let cards = '';
