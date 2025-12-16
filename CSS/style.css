@@ -47,7 +47,7 @@ img {
 
 /* CARDS */
 
-#card-container {
+#cardContainer {
     display: flex;
     flex-wrap: wrap;
     padding: 3rem;

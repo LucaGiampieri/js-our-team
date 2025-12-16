@@ -36,3 +36,33 @@ const teamMembers = [
     img: "img/female3.png"
   }
 ];
+
+//dichiaro la variabile in cui andrò ad inserire le card
+const teamCards = document.getElementById('cardContainer');
+
+
+//andiamo a crare una varibile cards dove andranno messe poi le singole card
+let cards = '';
+
+//vado a creare un ciclo che mi scorre l'array e che poi mi andrà a dare un output
+for (let i = 0; i < teamMembers.length; i++){
+  //creo una variabile in cui salvare i teamMebers iesimi
+  const members = teamMembers[i];
+  //faccio si che a ogni ciclo nella varibile cards venga aggiunta una card in scritta in HTML
+  //vado ad inserire immagini, nomi, ruoli ed email
+  cards += `<div class="card">
+                <div class="card-photo">
+                    <img src="./${members.img}" alt="${members.name}">
+                </div>
+                <div class="card-text">
+                    <div class="card-name">${members.name}</div>
+                    <div class="card-role">${members.role}</div>
+                    <div class="card-email">${members.email}</div>
+                </div>
+            </div>`
+}
+//vado a stamapre a schermo le cards
+ teamCards.innerHTML = cards;
+
+
+
