@@ -49,6 +49,13 @@ const roleMember = document.getElementById('role');
 const emailMember = document.getElementById('email');
 const imageMember = document.getElementById('image');
 const form = document.getElementById('member-form');
+const addButton = document.getElementById('button-add');
+
+//gestione click ADD
+addButton.addEventListener("click", () =>{
+  //al clicl il form compare e scompare
+  form.classList.toggle("display-none")
+});
 
 //gestione click form
 form.addEventListener("submit", function (event) {
